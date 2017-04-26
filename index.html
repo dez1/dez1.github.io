@@ -3,6 +3,24 @@
 <body>
 <h1>COMP110 Final Project</h1>
 <h2>Minesweeper</h2>
-<p>For this project, I made a Minesweeper game.  Instead of using numbers to identify where the bombs are placed, I used colors.  Green signifies that there is no bomb in the eight squares surrounding the block.  Yellow indicates that there is a bomb in one of those blocks.  Red indicates that you have hit a bomb and lost the game.</p>
+<p>For this project, I made a Minesweeper game.  Instead of using numbers to identify where the bombs are placed, I used colors.
+<ul><li>Green signifies that there is no bomb in the eight squares surrounding the block</li>
+<li>Yellow indicates that there is a bomb in one of those blocks</li>
+<li>Red indicates that you have hit a bomb and lost the game</li></ul></p>
+<h2>Concepts</h2>
+<p><b>For loops:</b> to set the bombs up in the grid, to mark certain squares as "visited" so they are not rechecked
+<br>
+<b>If-then statements:</b> to check if the square had been visited, to check if there were any bombs around the square, to randomly assign bombs
+<br>
+<b>Constants:</b> to provide a way to check if a square had been checked or not to avoid Stack Overflow
+<b>Recursion:</b> to call the checking method on each subsequently called square
+</p>
+<h2>Challenges</h2>
+<p>I kept running into a Stack Overflow error because the program would go back and forth between two squares or because it would circle back to the same square repeatedly.  To prevent this, I marked squares as "visited" and added a while loop around the program to check if it had been visited before the loop executed.</p>
+<h2>In Action</h2>
+<h2>Goals Achieved</h2>
+<p>The program runs and is a playable game.  When a square is clicked, it changes its color based on whether or not it has been declared a "bomb."  After being clicked, they other squares around it also change color and it continues until the squares turn yellow to signify a bomb nearby.</p>
+<h2>Future Work</h2>
+<p>I would like to add a more visually appealing screen for when the game is lost.  I would also like to add a method to determine when the game has been won and a screen with a message to pop up after that happens.</p>
 </body>
 </html>
